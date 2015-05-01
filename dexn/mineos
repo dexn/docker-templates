@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>mineos</Name>
+  <Description>
+	MineOS is all about learning to be an effective game host. Even better, a system administrator. Better yet, no sacrifices are made--neither in security nor functionality--to provide users with a fun, educational, and effective server platform.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br][br]
+    [b][u]Volume Mappings[/u][/b][br]
+    [b]/var/games/minecraft[/b] This path is used to store the minecraft data.[br][br]
+    [b][u]Environment Variables[/u][/b][br]
+    [b]PASSWORD[/b] By default this is set to cr33p3r. Change this to what you wish to use.
+  </Description>
+  <Overview>
+	MineOS is all about learning to be an effective game host. Even better, a system administrator. Better yet, no sacrifices are made--neither in security nor functionality--to provide users with a fun, educational, and effective server platform.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
+  <Registry>https://registry.hub.docker.com/u/yujiod/minecraft-mineos/</Registry>
+  <GitHub>https://github.com/yujiod/docker-mineos</GitHub>
+  <Repository>yujiod/minecraft-mineos</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8443</HostPort>
+        <ContainerPort>8443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>25565</HostPort>
+        <ContainerPort>25565</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>	  
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>PASSWORD</Name>
+      <Value>cr33p3r</Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir>path for data</HostDir>
+      <ContainerDir>/var/games/minecraft</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>	
+  </Data>
+  <WebUI>http://[IP]:[PORT:8443]/</WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+</Containers>
