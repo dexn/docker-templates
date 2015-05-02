@@ -46,7 +46,7 @@
       <Mode>rw</Mode>
     </Volume>	
   </Data>
-  <WebUI>http://[IP]:[PORT:8443]/</WebUI>
+  <WebUI>https://[IP]:[PORT:8443]/</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/dexn/docker-templates/master/dexn/images/minecraft.png</Icon>
 </Containers>
