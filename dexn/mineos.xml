@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <Name>mineos</Name>
+  <Name>MineOS</Name>
   <Description>
 	MineOS is all about learning to be an effective game host. Even better, a system administrator. Better yet, no sacrifices are made--neither in security nor functionality--to provide users with a fun, educational, and effective server platform.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br][br]
@@ -12,10 +12,10 @@
   <Overview>
 	MineOS is all about learning to be an effective game host. Even better, a system administrator. Better yet, no sacrifices are made--neither in security nor functionality--to provide users with a fun, educational, and effective server platform.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
-  <Registry>https://registry.hub.docker.com/u/yujiod/minecraft-mineos/</Registry>
-  <GitHub>https://github.com/yujiod/docker-mineos</GitHub>
-  <Repository>yujiod/minecraft-mineos</Repository>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/u/dexn/mineos/</Registry>
+  <GitHub>https://github.com/dexn/docker-templates</GitHub>
+  <Repository>dexn/mineos</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
