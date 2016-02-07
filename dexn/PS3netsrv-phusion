@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>PS3netsrv (Phusion)</Name>
+  <Description>
+	PS3netsrv allows you to play your backups through the network from your unRAID server.
+  </Description>
+  <Overview>
+	PS3netsrv allows you to play your backups through the network from your unRAID server.
+  </Overview>
+  <Support>https://lime-technology.com/forum/index.php?topic=37859.0</Support>
+  <Registry>https://registry.hub.docker.com/u/mccloud/ps3netsrv/</Registry>
+  <GitHub>https://github.com/dexn/docker-templates</GitHub>
+  <Repository>mccloud/ps3netsrv:phusion</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>38008</HostPort>
+        <ContainerPort>38008</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>	  
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>path for data</HostDir>
+      <ContainerDir>/games</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>	
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/dexn/docker-templates/master/dexn/images/ps3netsrv.jpg</Icon>
+</Containers>
