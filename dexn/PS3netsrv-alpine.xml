@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <Beta>False</Beta>
+  <Category>Network:Other MediaApp:Other MediaServer:Other</Category>
   <Name>PS3netsrv-Alpine</Name>
   <Description>
 	PS3netsrv allows you to play your backups through the network from your unRAID server.
