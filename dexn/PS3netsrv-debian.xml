@@ -35,5 +35,5 @@
   </Data>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon>https://cloud.githubusercontent.com/assets/2460478/12876274/7eaa3a88-ce4a-11e5-9627-29c10809da07.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dexn/docker-templates/master/dexn/images/ps3netsrvicon.png</Icon>
 </Containers>
